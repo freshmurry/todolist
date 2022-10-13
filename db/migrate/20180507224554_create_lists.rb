@@ -1,6 +1,7 @@
 class CreateLists < ActiveRecord::Migration
   def change
     create_table :lists do |t|
+      t.string :website, :string
       t.string :description
       t.boolean :completed, default: false
 

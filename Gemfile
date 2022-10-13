@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '5.0.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -40,8 +40,9 @@ end
 
 group :development do
   gem 'web-console', '~> 2.0'
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3', '< 1.4'
   gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :production do

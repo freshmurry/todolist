@@ -1,9 +1,13 @@
-
-
 <p>
   <strong>Todo Item:</strong>
   <%= @list.description %>
 </p>
+<% if @list.website %>
+    <div class="row">
+      <b><%= link_to @list.website, "http://#{@list.website}", target:"_blank", class: 'website' %></b>
+    </div>
+  <% else%>
+<% end %>
 
 <p>
   <strong>Completed:</strong>
