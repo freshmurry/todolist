@@ -32,7 +32,7 @@
               <% end %>
             </div>
           </td>
-          <td>
+          <td class="col-md-3">
             <center><%= form_for(list) do |f| %>
               <%= f.text_field :description, type: 'hidden' %>
               <%= f.check_box :completed, :checked => true, :style => 'visibility: hidden' %>
